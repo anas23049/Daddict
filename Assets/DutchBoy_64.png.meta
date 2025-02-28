@@ -1,0 +1,832 @@
+fileFormatVersion: 2
+guid: 426afa99c6ce7e742b4f8d975bc4402b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4346831603051372275
+    second: DutchBoy_64_0
+  - first:
+      213: -8128202630789268900
+    second: DutchBoy_64_1
+  - first:
+      213: -7255187696521860868
+    second: DutchBoy_64_2
+  - first:
+      213: -5554414067818458991
+    second: DutchBoy_64_3
+  - first:
+      213: 7133556767607791415
+    second: DutchBoy_64_4
+  - first:
+      213: -2849179242193148807
+    second: DutchBoy_64_5
+  - first:
+      213: -684990608768866086
+    second: DutchBoy_64_6
+  - first:
+      213: -1583266201428513813
+    second: DutchBoy_64_7
+  - first:
+      213: -4137462924284583868
+    second: DutchBoy_64_8
+  - first:
+      213: 3603407355325346574
+    second: DutchBoy_64_9
+  - first:
+      213: -4638091884994446712
+    second: DutchBoy_64_10
+  - first:
+      213: 3856858971128935641
+    second: DutchBoy_64_11
+  - first:
+      213: -8268127888965031260
+    second: DutchBoy_64_12
+  - first:
+      213: -1033236275531203891
+    second: DutchBoy_64_13
+  - first:
+      213: -4615428937538915383
+    second: DutchBoy_64_14
+  - first:
+      213: -8788904376896444808
+    second: DutchBoy_64_15
+  - first:
+      213: -3110370475804100032
+    second: DutchBoy_64_16
+  - first:
+      213: 6895093050095641417
+    second: DutchBoy_64_17
+  - first:
+      213: 6208747394496954815
+    second: DutchBoy_64_18
+  - first:
+      213: -8902322066766474481
+    second: DutchBoy_64_19
+  - first:
+      213: -75281745090542055
+    second: DutchBoy_64_20
+  - first:
+      213: -6964799192844476801
+    second: DutchBoy_64_21
+  - first:
+      213: 6976387742414748805
+    second: DutchBoy_64_22
+  - first:
+      213: 8883153408980153304
+    second: DutchBoy_64_23
+  - first:
+      213: 179159152899907418
+    second: DutchBoy_64_24
+  - first:
+      213: -647558021662807341
+    second: DutchBoy_64_25
+  - first:
+      213: 241182415726623570
+    second: DutchBoy_64_26
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DutchBoy_64_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 320
+        width: 153
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fe915eff4c035c30800000000000000
+      internalID: 4346831603051372275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DutchBoy_64_1
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 255
+        width: 27
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5af869b5c2d23f80800000000000000
+      internalID: -8128202630789268900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DutchBoy_64_2
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 255
+        width: 27
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf8a70aca35605b90800000000000000
+      internalID: -7255187696521860868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DutchBoy_64_3
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 255
+        width: 26
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1909f3875d1cae2b0800000000000000
+      internalID: -5554414067818458991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DutchBoy_64_4
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 255
+        width: 27
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73f985eb51c7ff260800000000000000
+      internalID: 7133556767607791415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DutchBoy_64_5
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 255
+        width: 26
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97429a7239ea578d0800000000000000
+      internalID: -2849179242193148807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DutchBoy_64_6
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 255
+        width: 27
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad86ad9abac6e76f0800000000000000
+      internalID: -684990608768866086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DutchBoy_64_7
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 255
+        width: 26
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: beba8fe37cb170ae0800000000000000
+      internalID: -1583266201428513813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DutchBoy_64_8
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 255
+        width: 27
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4402bae3467c496c0800000000000000
+      internalID: -4137462924284583868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DutchBoy_64_9
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 192
+        width: 165
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e037233e5efd10230800000000000000
+      internalID: 3603407355325346574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DutchBoy_64_10
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 127
+        width: 27
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88ab847110032afb0800000000000000
+      internalID: -4638091884994446712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DutchBoy_64_11
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 127
+        width: 27
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d43beabcc0568530800000000000000
+      internalID: 3856858971128935641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DutchBoy_64_12
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 127
+        width: 26
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4aa2dbccd75b14d80800000000000000
+      internalID: -8268127888965031260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DutchBoy_64_13
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 127
+        width: 27
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dca3aebe41539a1f0800000000000000
+      internalID: -1033236275531203891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DutchBoy_64_14
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 127
+        width: 26
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c33febb5d3b2ffb0800000000000000
+      internalID: -4615428937538915383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DutchBoy_64_15
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 127
+        width: 27
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 876263ae80a870680800000000000000
+      internalID: -8788904376896444808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DutchBoy_64_16
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 127
+        width: 26
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04a75dd188eb5d4d0800000000000000
+      internalID: -3110370475804100032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DutchBoy_64_17
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 127
+        width: 27
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9432738e89a40bf50800000000000000
+      internalID: 6895093050095641417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DutchBoy_64_18
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 64
+        width: 184
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb18f152cd6e92650800000000000000
+      internalID: 6208747394496954815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DutchBoy_64_19
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 0
+        width: 26
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f03534e2f39947480800000000000000
+      internalID: -8902322066766474481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DutchBoy_64_20
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 0
+        width: 28
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9168ec5d6ab84fef0800000000000000
+      internalID: -75281745090542055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DutchBoy_64_21
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 0
+        width: 25
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7ed3920900185f90800000000000000
+      internalID: -6964799192844476801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DutchBoy_64_22
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 0
+        width: 24
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58c350270bb11d060800000000000000
+      internalID: 6976387742414748805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DutchBoy_64_23
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 0
+        width: 27
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d3ff83e5fc474b70800000000000000
+      internalID: 8883153408980153304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DutchBoy_64_24
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 0
+        width: 26
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5fdbd2ec408c7200800000000000000
+      internalID: 179159152899907418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DutchBoy_64_25
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 0
+        width: 24
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3da655309696307f0800000000000000
+      internalID: -647558021662807341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DutchBoy_64_26
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 0
+        width: 28
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25bb477112ad85300800000000000000
+      internalID: 241182415726623570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      DutchBoy_64_0: 4346831603051372275
+      DutchBoy_64_1: -8128202630789268900
+      DutchBoy_64_10: -4638091884994446712
+      DutchBoy_64_11: 3856858971128935641
+      DutchBoy_64_12: -8268127888965031260
+      DutchBoy_64_13: -1033236275531203891
+      DutchBoy_64_14: -4615428937538915383
+      DutchBoy_64_15: -8788904376896444808
+      DutchBoy_64_16: -3110370475804100032
+      DutchBoy_64_17: 6895093050095641417
+      DutchBoy_64_18: 6208747394496954815
+      DutchBoy_64_19: -8902322066766474481
+      DutchBoy_64_2: -7255187696521860868
+      DutchBoy_64_20: -75281745090542055
+      DutchBoy_64_21: -6964799192844476801
+      DutchBoy_64_22: 6976387742414748805
+      DutchBoy_64_23: 8883153408980153304
+      DutchBoy_64_24: 179159152899907418
+      DutchBoy_64_25: -647558021662807341
+      DutchBoy_64_26: 241182415726623570
+      DutchBoy_64_3: -5554414067818458991
+      DutchBoy_64_4: 7133556767607791415
+      DutchBoy_64_5: -2849179242193148807
+      DutchBoy_64_6: -684990608768866086
+      DutchBoy_64_7: -1583266201428513813
+      DutchBoy_64_8: -4137462924284583868
+      DutchBoy_64_9: 3603407355325346574
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
