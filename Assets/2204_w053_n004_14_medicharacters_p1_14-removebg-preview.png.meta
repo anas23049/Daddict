@@ -1,0 +1,390 @@
+fileFormatVersion: 2
+guid: b456159f611f4214bb6168622ef67f28
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8187780541473231495
+    second: 2204_w053_n004_14_medicharacters_p1_14-removebg-preview_0
+  - first:
+      213: -5046254098164301237
+    second: 2204_w053_n004_14_medicharacters_p1_14-removebg-preview_1
+  - first:
+      213: -2651869150994042947
+    second: 2204_w053_n004_14_medicharacters_p1_14-removebg-preview_2
+  - first:
+      213: -6136409644714950156
+    second: 2204_w053_n004_14_medicharacters_p1_14-removebg-preview_3
+  - first:
+      213: 5018979129622339961
+    second: 2204_w053_n004_14_medicharacters_p1_14-removebg-preview_4
+  - first:
+      213: -7834073066695593652
+    second: 2204_w053_n004_14_medicharacters_p1_14-removebg-preview_5
+  - first:
+      213: -4578143536118051725
+    second: 2204_w053_n004_14_medicharacters_p1_14-removebg-preview_6
+  - first:
+      213: -7292065922861581509
+    second: 2204_w053_n004_14_medicharacters_p1_14-removebg-preview_7
+  - first:
+      213: 5909136922522564705
+    second: 2204_w053_n004_14_medicharacters_p1_14-removebg-preview_8
+  - first:
+      213: 2155458839533423361
+    second: 2204_w053_n004_14_medicharacters_p1_14-removebg-preview_9
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 2204_w053_n004_14_medicharacters_p1_14-removebg-preview_0
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 209
+        width: 93
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9314ce7d0e3922f43ba7b0ab23991282
+      internalID: 260893816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2204_w053_n004_14_medicharacters_p1_14-removebg-preview_1
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 209
+        width: 106
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c950419d17982a747a09a57120296129
+      internalID: 783368260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2204_w053_n004_14_medicharacters_p1_14-removebg-preview_2
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 209
+        width: 111
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 765ab18f8bfd2414983bf85886348577
+      internalID: -1513056194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2204_w053_n004_14_medicharacters_p1_14-removebg-preview_3
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 209
+        width: 102
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 626a001c97b117b42b58321b3a330a1f
+      internalID: 1485312742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2204_w053_n004_14_medicharacters_p1_14-removebg-preview_4
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 209
+        width: 104
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad70b1c670a98f443b5e1b512b87da6c
+      internalID: 2062651912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2204_w053_n004_14_medicharacters_p1_14-removebg-preview_5
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 65
+        width: 96
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 877472c9d90eff247af986a9262b5615
+      internalID: -89393460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2204_w053_n004_14_medicharacters_p1_14-removebg-preview_6
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 65
+        width: 83
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13f79c8dc0b42474f9e79213ce0b1f82
+      internalID: 303520854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2204_w053_n004_14_medicharacters_p1_14-removebg-preview_7
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 65
+        width: 85
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 723344f43fa05c84a912dde7206df78e
+      internalID: -1203701560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2204_w053_n004_14_medicharacters_p1_14-removebg-preview_8
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 65
+        width: 82
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 152f040fe8141354fba663c80fe7b25e
+      internalID: -1814872616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2204_w053_n004_14_medicharacters_p1_14-removebg-preview_9
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 65
+        width: 96
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 499ac5623dcb2c34fa092ae3473c348b
+      internalID: -1287397888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 427bc2b10bca896469a4489ab2b33d94
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      2204_w053_n004_14_medicharacters_p1_14-removebg-preview_0: 260893816
+      2204_w053_n004_14_medicharacters_p1_14-removebg-preview_1: 783368260
+      2204_w053_n004_14_medicharacters_p1_14-removebg-preview_2: -1513056194
+      2204_w053_n004_14_medicharacters_p1_14-removebg-preview_3: 1485312742
+      2204_w053_n004_14_medicharacters_p1_14-removebg-preview_4: 2062651912
+      2204_w053_n004_14_medicharacters_p1_14-removebg-preview_5: -89393460
+      2204_w053_n004_14_medicharacters_p1_14-removebg-preview_6: 303520854
+      2204_w053_n004_14_medicharacters_p1_14-removebg-preview_7: -1203701560
+      2204_w053_n004_14_medicharacters_p1_14-removebg-preview_8: -1814872616
+      2204_w053_n004_14_medicharacters_p1_14-removebg-preview_9: -1287397888
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
