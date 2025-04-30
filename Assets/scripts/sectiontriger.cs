@@ -1,55 +1,33 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class sectiontriger : MonoBehaviour
+public class SectionTrigger : MonoBehaviour
 {
-    public GameObject terrain;             // Prefab to spawn
-    public GameObject originalTerrain;
-    public GameObject veryfirstpiece;// The first terrain piece in the scene
+    public GameObject sectionPrefab;
+    public float sectionLength = 300f;
+    public float destroyDelay = 7f;
+    public GameObject firstterrain;
+    private static float nextXPosition = 100f; 
+    private const float fixedZ = 8f;
+    private const float fixedY = 0f;
 
-    public float terrainLength = 300f;
-    private float nextSpawnX = 100f + 300f;
-
-    private List<GameObject> terrainPieces = new List<GameObject>();
-
-    private void Start()
-    {
-        if (originalTerrain != null)
-        {
-            terrainPieces.Add(originalTerrain); // Track original
-        }
-    }
+    private bool hasTriggered = false;
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("endless"))
+        if (!hasTriggered && other.CompareTag("Player"))
         {
-            
-            StartCoroutine(SpawnAndReplaceTerrain());
-        }
-    }
+            hasTriggered = true;
 
-    private IEnumerator SpawnAndReplaceTerrain()
-    {
-        // Wait for physics to finish
-        yield return null;
-
-        // Destroy all previous terrain pieces
-        foreach (GameObject piece in terrainPieces)
-        {
-            Destroy(veryfirstpiece);
-            if (piece != null)
-                Destroy(piece,7);
            
+            nextXPosition += sectionLength;
+            Vector3 spawnPos = new Vector3(nextXPosition, fixedY, fixedZ);
+
+           
+            Instantiate(sectionPrefab, spawnPos, Quaternion.identity);
+
+          
+            Destroy(transform.parent.gameObject, destroyDelay);
+            Destroy(firstterrain,1);
         }
-        terrainPieces.Clear();
-
-        // Spawn a new one
-        GameObject newPiece = Instantiate(terrain, new Vector3(nextSpawnX, 0, 8), Quaternion.identity);
-        terrainPieces.Add(newPiece);
-
-        // Update for next time
-        nextSpawnX += terrainLength - 100;
     }
 }
