@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - endless
+  - Fire
+  - drug
   layers:
   - Default
   - TransparentFX
