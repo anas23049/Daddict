@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class player : MonoBehaviour
 {
-    private float fixedZ; // Stores the Z position to keep it constant
+    private float fixedZ; // Stores z postion 
 
     void Start()
     {
