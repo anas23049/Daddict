@@ -2,7 +2,7 @@
 {
     public enum CameraView
     {
-        AlwaysForward,
+        AlwaysForward, // for forward
         TopView,
         SideView
     }
