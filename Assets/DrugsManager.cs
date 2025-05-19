@@ -18,7 +18,7 @@ public class DrugsManager : MonoBehaviour
         Vector3 playerPos = player.transform.position;
 
         int x = Random.Range((int)playerPos.x + 30, (int)playerPos.x + 81);
-        int y = Random.Range(0, 3);
+        int y = Random.Range(2, 3);
         float z = 12f;
 
         Vector3 position = new Vector3(x, y, z);

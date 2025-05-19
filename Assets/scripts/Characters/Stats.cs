@@ -21,5 +21,19 @@ namespace Characters
         [Header("Health")]
         public float health = 100f;
         public float invincibilityTime = 2f;
+
+        // Add base values to restore original stats later
+        [HideInInspector] public float baseSpeed;
+        [HideInInspector] public float baseAcceleration;
+        [HideInInspector] public float baseJumpForce;
+        [HideInInspector] public float baseHealth;
+
+        private void Awake()
+        {
+            baseSpeed = speed;
+            baseAcceleration = acceleration;
+            baseJumpForce = jumpForce;
+            baseHealth = health;
+        }
     }
 }
