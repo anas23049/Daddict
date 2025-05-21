@@ -31,28 +31,20 @@ public class UIbuttons : MonoBehaviour
         }
     }
 
-    public void ToggleMenu()
-    {
-        PlayClickSound();
-        if (isMenuActive)
-        {
-            buttons.SetActive(false);
-            Time.timeScale = 1; // Resume game time
-            isMenuActive = false;
-        }
-        else
-        {
-            buttons.SetActive(true);
-            Time.timeScale = 1; // Pause game time
-            isMenuActive = true;
-        }
-    }
+ 
 
     public void about()
     {
-        PlayClickSound();
-        About.SetActive(true);
         Time.timeScale = 0;
+        print("working");
+        PlayClickSound();
+
+        // Toggle About panel visibility
+        bool isActive = About.activeSelf;
+        About.SetActive(!isActive);
+
+        // Pause or resume the game based on About panel visibility
+        Time.timeScale = isActive ? 1 : 0;
     }
 
     public void restart()
@@ -63,22 +55,16 @@ public class UIbuttons : MonoBehaviour
         Time.timeScale = 1;
     }
 
-    public void mapscene()
+    public void mainscene()
     {
-        AudioListener.pause = false; // Resume all sounds
-        AudioListener.volume = 1;
-        PlayClickSound();
-        SceneManager.LoadScene("maps");
         Time.timeScale = 1;
+        PlayClickSound();
+        Time.timeScale = 1;
+        SceneManager.LoadScene("main");
+       
         
     }
-    public void garagescene()
-    {
-        AudioListener.pause = false; // Resume all sounds
-        PlayClickSound();
-        SceneManager.LoadScene("garage");
-        Time.timeScale = 1;
-    }
+
 
     public void quitt()
     {
@@ -86,15 +72,16 @@ public class UIbuttons : MonoBehaviour
         Application.Quit();
     }
 
-    public void level1()
+    public void mainmenu()
     {
+        Time.timeScale = 1;
         PlayClickSound();
-        SceneManager.LoadScene("level1");
+        SceneManager.LoadScene("mainmenu");
     }
 
     public void pause()
     {
-        Debug.Log("Pause button pressed");
+       
         PlayClickSound();
         Time.timeScale = 0;
         banner.SetActive(true);

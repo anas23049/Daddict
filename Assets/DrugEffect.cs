@@ -8,7 +8,6 @@ using UnityEngine.Rendering.Universal;
 public class DrugEffect : MonoBehaviour
 {
     public Slider drugSlider;
-    public Slider lifeslider;
     public Image drugEffectOverlay;
 
     [Header("Post Processing")]
@@ -40,10 +39,28 @@ public class DrugEffect : MonoBehaviour
     {
         if (collider.CompareTag("drug"))
         {
-            drugSlider.value = Mathf.Clamp(drugSlider.value + 10, 0, 100);
-            lifeslider.value = Mathf.Clamp(lifeslider.value - 5, 0, 100);
+            StartCoroutine(SmoothChange(+10)); // Smoothly increase by 10
             Destroy(collider.gameObject);
         }
+        else if (collider.CompareTag("firstaid"))
+        {
+            StartCoroutine(SmoothChange(-10)); // Smoothly decrease by 10
+            Destroy(collider.gameObject);
+        }
+    }
+
+    private IEnumerator SmoothChange(float amount)
+    {
+        float target = Mathf.Clamp(drugSlider.value + amount, 0, 100);
+        float speed = 10f; // Change rate per second
+
+        while (!Mathf.Approximately(drugSlider.value, target))
+        {
+            drugSlider.value = Mathf.MoveTowards(drugSlider.value, target, speed * Time.deltaTime);
+            yield return null;
+        }
+
+        drugSlider.value = target; // Ensure it's exact
     }
 
     private IEnumerator ContinuouslyApplyDrugEffect()
@@ -55,8 +72,7 @@ public class DrugEffect : MonoBehaviour
 
             // Stat effects
             float minMultiplier = 0.8f;
-            playerStats.speed = Mathf.Lerp(playerStats.baseSpeed, playerStats.baseSpeed * minMultiplier, t);
-            playerStats.acceleration = Mathf.Lerp(playerStats.baseAcceleration, playerStats.baseAcceleration * minMultiplier, t);
+        
 
             // UI overlay pulse effect
             if (drugEffectOverlay != null)

@@ -7,6 +7,8 @@ namespace Characters.Movement
 {
     public class GroundMovement : AbstractMovement, IJumpable, IFallable
     {
+        public bool isBoosting = false; // <-- Added
+
         public GroundMovement(IPhysicsCharacter character) : base(character)
         {
         }
@@ -31,14 +33,21 @@ namespace Characters.Movement
 
         private Vector3 AccelerateAndMove(Vector3 direction)
         {
-            Vector3 clampedDirection = Vector3.ClampMagnitude(direction,1f); // normalizing direction so we wouldn't go super fast in diagonal
-            Vector3 velocity =
-                CommonMethods.CreateVectorWithoutLoosingYWithMultiplier(clampedDirection, rbd.velocity.y,
-                    stats.speed);
-            if (rbd.velocity.magnitude < velocity.magnitude)
+            Vector3 clampedDirection = Vector3.ClampMagnitude(direction, 1f);
+            Vector3 velocity = CommonMethods.CreateVectorWithoutLoosingYWithMultiplier(
+                clampedDirection, rbd.velocity.y, stats.speed);
+
+            Debug.Log("Rigidbody Velocity: " + rbd.velocity.magnitude + " | stats.speed: " + stats.speed);
+
+            if (isBoosting)
             {
-                var acceleration = CommonMethods.CreateVectorWithoutLoosingYWithMultiplier(clampedDirection, rbd.velocity.y,
-                    stats.acceleration);
+                // Directly override velocity during boost
+                rbd.velocity = velocity;
+            }
+            else if (rbd.velocity.magnitude < velocity.magnitude)
+            {
+                var acceleration = CommonMethods.CreateVectorWithoutLoosingYWithMultiplier(
+                    clampedDirection, rbd.velocity.y, stats.acceleration);
                 rbd.AddForce(acceleration);
             }
             else
@@ -49,20 +58,17 @@ namespace Characters.Movement
             return velocity;
         }
 
-
         private void UpdateAnimParameters(Vector3 groundVelocity)
         {
             animatorFacade.UpdateInputs();
             animatorFacade.SetGroundVelocity(CommonMethods.CalculateGroundVelocity(groundVelocity));
         }
 
-
         public void Jump()
         {
             animatorFacade.SetJumping(true);
             rbd.AddForce(Vector3.up * stats.jumpForce, ForceMode.Impulse);
         }
-
 
         public override void CleanUp()
         {
