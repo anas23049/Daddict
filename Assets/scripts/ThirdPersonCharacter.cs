@@ -109,8 +109,8 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             }
 
             // Apply horizontal velocity (preserve Y velocity for gravity/jumping)
-            Vector3 targetVelocity = new Vector3(move.x * m_MoveSpeedMultiplier, m_Rigidbody.velocity.y, 0);
-            m_Rigidbody.velocity = targetVelocity;
+            Vector3 targetVelocity = new Vector3(move.x * m_MoveSpeedMultiplier, m_Rigidbody.linearVelocity.y, 0);
+            m_Rigidbody.linearVelocity = targetVelocity;
 
             UpdateAnimator(move);
         }
@@ -130,7 +130,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
                 // Boost slide forward velocity
                 float slideSpeed = m_MoveSpeedMultiplier * 2f; // Increase this multiplier if needed
-                m_Rigidbody.velocity = new Vector3(Mathf.Sign(m_ForwardAmount) * slideSpeed, m_Rigidbody.velocity.y, 0);
+                m_Rigidbody.linearVelocity = new Vector3(Mathf.Sign(m_ForwardAmount) * slideSpeed, m_Rigidbody.linearVelocity.y, 0);
             }
         }
 
@@ -148,7 +148,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         {
             if (jump && !slideInput && !m_Sliding && m_Animator.GetCurrentAnimatorStateInfo(0).IsName("Grounded"))
             {
-                m_Rigidbody.velocity = new Vector3(m_Rigidbody.velocity.x, m_JumpPower, 0);
+                m_Rigidbody.linearVelocity = new Vector3(m_Rigidbody.linearVelocity.x, m_JumpPower, 0);
                 m_IsGrounded = false;
                 m_GroundCheckDistance = 0.1f;
             }
@@ -158,7 +158,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         {
             Vector3 extraGravity = (Physics.gravity * m_GravityMultiplier) - Physics.gravity;
             m_Rigidbody.AddForce(extraGravity);
-            m_GroundCheckDistance = m_Rigidbody.velocity.y < 0 ? m_OrigGroundCheckDistance : 0.01f;
+            m_GroundCheckDistance = m_Rigidbody.linearVelocity.y < 0 ? m_OrigGroundCheckDistance : 0.01f;
         }
 
         void UpdateAnimator(Vector3 move)
@@ -168,7 +168,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             m_Animator.SetBool("Sliding", m_Sliding);
 
             if (!m_IsGrounded)
-                m_Animator.SetFloat("Jump", m_Rigidbody.velocity.y);
+                m_Animator.SetFloat("Jump", m_Rigidbody.linearVelocity.y);
 
             m_Animator.speed = (m_IsGrounded && move.magnitude > 0) ? m_AnimSpeedMultiplier : 1;
         }

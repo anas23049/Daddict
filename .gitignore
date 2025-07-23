@@ -1,29 +1,3 @@
-
-
-
 .vs/
-Packages/.vs/
-ProjectSettings/.vs/
-
-# Unity-specific ignores
-[Ll]ibrary/
-[Tt]emp/
-[Bb]uild/
-[Bb]uilds/
-[Ll]ogs/
-obj/
-*.csproj
-*.unityproj
-*.sln
-*.user
-*.pidb
-*.booproj
-*.svd
-*.pdb
-*.mdb
-*.opendb
-
-# Other system files
-.DS_Store
-Thumbs.db
-
+Temp/
+Library/

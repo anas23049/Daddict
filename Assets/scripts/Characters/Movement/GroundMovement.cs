@@ -35,24 +35,23 @@ namespace Characters.Movement
         {
             Vector3 clampedDirection = Vector3.ClampMagnitude(direction, 1f);
             Vector3 velocity = CommonMethods.CreateVectorWithoutLoosingYWithMultiplier(
-                clampedDirection, rbd.velocity.y, stats.speed);
+                clampedDirection, rbd.linearVelocity.y, stats.speed);
 
-            Debug.Log("Rigidbody Velocity: " + rbd.velocity.magnitude + " | stats.speed: " + stats.speed);
 
             if (isBoosting)
             {
                 // Directly override velocity during boost
-                rbd.velocity = velocity;
+                rbd.linearVelocity = velocity;
             }
-            else if (rbd.velocity.magnitude < velocity.magnitude)
+            else if (rbd.linearVelocity.magnitude < velocity.magnitude)
             {
                 var acceleration = CommonMethods.CreateVectorWithoutLoosingYWithMultiplier(
-                    clampedDirection, rbd.velocity.y, stats.acceleration);
+                    clampedDirection, rbd.linearVelocity.y, stats.acceleration);
                 rbd.AddForce(acceleration);
             }
             else
             {
-                rbd.velocity = velocity;
+                rbd.linearVelocity = velocity;
             }
 
             return velocity;

@@ -31,9 +31,9 @@ namespace Characters.Movement
             }
 
             var velocity =
-                CommonMethods.CreateVectorWithoutLoosingYWithMultiplier(direction, rbd.velocity.y, stats.slidingSpeed);
+                CommonMethods.CreateVectorWithoutLoosingYWithMultiplier(direction, rbd.linearVelocity.y, stats.slidingSpeed);
 
-            rbd.velocity = velocity;
+            rbd.linearVelocity = velocity;
             Rotate(direction);
             UpdateAnimParameters(velocity);
         }

@@ -17,20 +17,12 @@ namespace Animators
 
 
 
-        private CapsuleCollider _capsuleCollider;
-        private float _originalHeight;
-        private Vector3 _originalCenter;
+    
 
         private void OnEnable()
         {
             _animator = GetComponent<Animator>();
-            _capsuleCollider = GetComponent<CapsuleCollider>();
-
-            if (_capsuleCollider != null)
-            {
-                _originalHeight = _capsuleCollider.height;
-                _originalCenter = _capsuleCollider.center;
-            }
+         
         }
 
         public Animator getAnimator()
@@ -93,22 +85,7 @@ namespace Animators
             _animator.SetBool(Sliding, sliding);
 
            
-                if (sliding)
-                {
-                    // Reduce height and shift center down
-                    _capsuleCollider.height = _originalHeight * 0.5f;
-                    _capsuleCollider.center = new Vector3(
-                        _originalCenter.x,
-                        _originalCenter.y - (_originalHeight * 0.25f),
-                        _originalCenter.z
-                    );
-                }
-                else
-                {
-                    // Restore original height and center
-                    _capsuleCollider.height = _originalHeight;
-                    _capsuleCollider.center = _originalCenter;
-                }
+               
             
         }
 

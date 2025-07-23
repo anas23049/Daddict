@@ -26,7 +26,7 @@ namespace Characters.Movement
 
 
             AddVelocity(
-                CommonMethods.CreateVectorWithoutLoosingYWithMultiplier(direction, rbd.velocity.y, stats.crouchSpeed));
+                CommonMethods.CreateVectorWithoutLoosingYWithMultiplier(direction, rbd.linearVelocity.y, stats.crouchSpeed));
             Rotate(direction);
             UpdateAnimParameters();
         }

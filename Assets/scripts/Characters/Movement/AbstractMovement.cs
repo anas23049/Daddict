@@ -28,7 +28,7 @@ namespace Characters.Movement
 
         protected void AddVelocity(Vector3 movementVector)
         {
-            rbd.velocity = movementVector;
+            rbd.linearVelocity = movementVector;
         }
 
         protected void Rotate(Vector3 direction)

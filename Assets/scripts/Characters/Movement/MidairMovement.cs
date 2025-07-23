@@ -35,7 +35,7 @@ namespace Characters.Movement
             // In air we usually move slower (stats.airSpeed < stats.Speed)
             // But this should only affect X,Z axis, because Y is the gravity
             AddVelocity(
-                CommonMethods.CreateVectorWithoutLoosingYWithMultiplier(direction, rbd.velocity.y, stats.airSpeed));
+                CommonMethods.CreateVectorWithoutLoosingYWithMultiplier(direction, rbd.linearVelocity.y, stats.airSpeed));
 
             CalculateVelocity();
             Rotate(direction);
@@ -44,9 +44,9 @@ namespace Characters.Movement
         private void CalculateVelocity()
         {
             // If the character is falling too fast, clamping Y velocity to stats.maxDownVelocity
-            if (rbd.velocity.y < stats.maxDownVelocity)
+            if (rbd.linearVelocity.y < stats.maxDownVelocity)
             {
-                rbd.velocity = CommonMethods.ModifyYinVector(rbd.velocity, stats.maxDownVelocity);
+                rbd.linearVelocity = CommonMethods.ModifyYinVector(rbd.linearVelocity, stats.maxDownVelocity);
             }
             else // If not, then applying acceleration force down (gravity)
             {
@@ -64,7 +64,7 @@ namespace Characters.Movement
         private void UpdateLandingAnimation(Vector3 direction)
         {
             // Caching the variable, so we only invoking setIsAboutToLand when the value of oldAboutToLand has changed
-            float yValue = rbd.velocity.y;
+            float yValue = rbd.linearVelocity.y;
             if (yValue < 0 && CommonMethods.IsAboutToLand(transform.position, direction,
                 CommonMethods.NormalizeValue(yValue, stats.maxDownVelocity)) != oldAboutToLand)
             {

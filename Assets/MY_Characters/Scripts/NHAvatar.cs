@@ -216,24 +216,22 @@ namespace NHance.Assets.Scripts
                 if (temp.Contains(e.Type))
                     ActivateBodyPart(e.Target, false);
 
-
             Transform parent = SocketMap[itemToBoneMapper[obj.Type]] == null ? transform : SocketMap[itemToBoneMapper[obj.Type]].transform;
-			
+
             Vector3 position = SocketPosition(obj);
             Quaternion rotation = SocketRotation(obj);
- 
+
             Object itemInstance;
 #if UNITY_EDITOR
             if (Application.isPlaying)
                 itemInstance = Instantiate(obj.gameObject);
             else
                 itemInstance = PrefabUtility.InstantiatePrefab(obj.gameObject);
-            
 #else
-            itemInstance = Instantiate(obj.gameObject);
+    itemInstance = Instantiate(obj.gameObject);
 #endif
 
-            var result = (GameObject) itemInstance;
+            var result = (GameObject)itemInstance;
             result.transform.SetParent(parent);
             result.transform.localPosition = position;
             result.transform.localRotation = rotation;
@@ -249,13 +247,12 @@ namespace NHance.Assets.Scripts
                     foreach (var bmat in BodyMaterialsToReplace)
                         if (mr.sharedMaterials.Count(mt => mt.name == bmat.name) > 0)
                             haveSkinMatToReplace = true;
-                    
+
                     bool haveHeadMatToReplace = false;
                     foreach (var hmat in HeadMaterialsToReplace)
                         if (mr.sharedMaterials.Count(mt => mt.name == hmat.name) > 0)
                             haveHeadMatToReplace = true;
-                    
-                    
+
                     if (haveSkinMatToReplace)
                     {
                         List<Material> m = new List<Material>();
@@ -286,7 +283,6 @@ namespace NHance.Assets.Scripts
                         continue;
 
                     var mappersTypes = mapper.Wrappers.Where(w => w.Enabled).Select(w => w.Type);
-
 
                     foreach (var e in parts)
                         if (mappersTypes.Contains(e.Type))
@@ -401,22 +397,24 @@ namespace NHance.Assets.Scripts
 
         public void Save()
         {
-            //chose file path
+#if UNITY_EDITOR
+            // Choose file path
             string filePath = EditorUtility.SaveFilePanel("Select Directory to save prefab", "Assets/StylizedCharacter/Prefabs", $"{gameObject.name}_Prefab", "prefab");
             if (string.IsNullOrEmpty(filePath))
                 return;
-            //copy current game object
+            // Copy current game object
             var copy = Instantiate(gameObject);
-            //always enabled by default
+            // Always enabled by default
             copy.gameObject.SetActive(true);
-            //remove avatar
+            // Remove avatar
             copy.GetComponents<NHAvatar>().ToList().ForEach(i => DestroyImmediate(i));
             copy.GetComponents<NHAvatarDemo>().ToList().ForEach(i => DestroyImmediate(i));
             copy.GetComponentsInChildren<NHItem>().ToList().ForEach(i => DestroyImmediate(i));
-            //save to prefab
+            // Save to prefab
             PrefabUtility.SaveAsPrefabAsset(copy, filePath);
-            //destroy on scene
+            // Destroy on scene
             DestroyImmediate(copy);
+#endif
         }
 
         public void AutoSocketTargetSetup()
